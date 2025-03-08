@@ -1,0 +1,629 @@
+body {
+  width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          min-height: 100vh;
+          flex-direction: column;
+          overflow-x: hidden;
+           font-family: "Nunito", sans-serif;
+           padding: 0;
+           margin: 0;
+        }
+        .site-wrapper{
+            display: flex;
+              align-items: center;
+              justify-content: center;
+              min-height: 100vh;
+              flex-direction: column;
+        }
+        .box{
+          position: relative;
+            width: 1000px;
+            height: 300px;
+            background-color: #8d3dae;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+        }
+        .box h3{
+          position: absolute;
+          top: 45%;
+          left: 45%;
+        }
+        #dott{
+          width: 30px;
+          height: 30px;
+          display: inline-block;
+        }
+
+        .main{
+          width: 100%;
+          display: block;
+        }
+        .hero-site{
+          position: relative;
+          display: flex;
+          height: 100vh;
+          background: url(../images/main-banner.jpg)no-repeat;
+          background-size: cover;
+          background-position: center center;
+          justify-content: center;
+          align-items: center;
+        }
+
+        header{
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          padding: 20px 50px;
+          position: absolute;
+          width: 100%;
+          z-index: 9;
+          top: 0;
+          left: 0;
+        }
+        header .logo{
+          width: 40px;
+        }
+        header a{
+          font-size: 32px;
+          color: #fff;
+          text-decoration: none;
+        }
+        header i{
+          font-size: 32px;
+          color: #fff;
+          text-decoration: none;
+
+          cursor: pointer;
+        }
+        .hero-site h1{
+          font-size: 100px;
+          color: transparent;
+          position: relative;
+          display: block;
+          margin-top: 20px;
+          font-weight: 900;
+          text-align: center;
+          letter-spacing: 1px;
+          text-transform: uppercase;
+          -webkit-text-stroke: 1px #fff;
+            text-stroke: 1px #fff;
+        }
+        .hero-site h1 span{
+          display: inline-block;
+        }
+        .scroll_box{
+          position: absolute;
+          bottom: 20px;
+          left: 10%;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          align-items: center;
+          width: 30px;
+          height: 140px;
+        }
+        .scroll_box .scroll_txt{
+          position: relative;
+          font-size: 12px;
+          color: #9ec5e5;
+          display: block;
+          border: 1px solid #9ec5e5;
+          border-radius: 20px;
+          padding: 4px 10px;
+          transform: rotate(-90deg);
+          opacity: .5;
+        }
+        .scrollAnim{
+          position: relative;
+          display: block;
+          width: 20px;
+          height: 55px;
+          overflow: hidden;
+        }
+        .scrollAnimImg{
+          position: relative;
+          width: 10px;
+          animation: topBtm 4s linear infinite;
+        }
+        @keyframes topBtm{
+          0%, 100%{
+            top: -50%;
+          }
+          50%{
+            top: 50%;
+          }
+        }
+        .starAnimImg{
+          width: 30px;
+          margin-top: -35px;
+          position: relative;
+          animation: scale 4s linear infinite;
+        }
+        @keyframes scale{
+          0%{
+            transform: scale(0);
+          }
+          20%{
+            transform: scale(0);
+          }
+          50%{
+            transform: scale(1);
+          }
+          80%{
+            transform: scale(0);
+          }
+          100%{
+            transform: scale(0);
+          }
+        }
+        .menu{
+          position: fixed;
+          top: 0;
+          bottom: 0;
+          right: -700px;
+          width: 400px;
+          height: 100%;
+          padding: 0px 50px; 
+          background-color: #000000d6;
+          backdrop-filter: blur(10px);
+          z-index: 99;
+          border-left: 1px solid #20222e73;
+        }
+        /*.menu:after{
+          content: '';
+          background: url('https://images.pexels.com/photos/3457780/pexels-photo-3457780.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')no-repeat;
+          background-size: cover;
+          background-position: center;
+          width: 100%;
+          height: 100%;
+          top: 0;
+          left: 0;
+          position: absolute;
+          z-index: -1;
+          opacity: .3;
+        }*/
+        .menu .menuList{
+          margin-top: 150px;
+        }
+        .menu .menuList a{
+          position: relative;
+          font-size: 32px;
+          color: #fff;
+          font-weight: 400;
+          text-decoration: none;
+          display: flex;
+          padding: 10px 10px;
+          text-transform: uppercase;
+          justify-content: space-between;
+          align-items: center;
+        }
+        .menu .menuList a i{
+          position: relative;
+          left: -15px;
+          opacity: 0;
+          visibility: hidden;
+          transition: .5s; 
+        }
+        .menu .menuList a:hover i{
+          left: 0px;
+          opacity: 1;
+          visibility: visible;
+        }
+        .menu .closeMenu{
+          position: absolute;
+          top: 50px;
+          right: 50px;
+          color: #fff;
+          font-size: 50px;
+          cursor: pointer;
+        }
+
+        .title{
+          font-size: 32px;
+          color: #111;
+        }
+        .text-white{
+          color: #fff;
+        }
+        .menu_links{
+          position: absolute;
+          bottom: 10px;
+          display: flex;
+          left: 0;
+          list-style: none;
+        }
+        .menu_links li a{
+          display: block;
+          font-size: 14px;
+          color: #fff;
+          padding: 5px 10px;
+        }
+
+        .airdopesImg1{
+          width: 300px;
+          position: relative;
+          z-index: 9;
+        }
+        .musicWave {
+          position: absolute;
+          opacity: .2;
+          top: 18%;
+          left: 38%;
+          z-index: 1;
+          width: 450px;
+          height: 450px;
+          filter: grayscale(80%);
+      }
+      
+
+        /* About section */
+        .about_section{
+          position: relative;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 100%;
+          background-color: #282828;
+          padding: 100px 0;
+        }   
+        .content_box{
+          position: relative;
+        }
+        .text2{
+          font-size: 20px;
+          color: #fff;
+          line-height: 32px;
+        }
+        .about_img{
+          width: 100%;
+        }
+        .default_btn {
+          position: relative;
+          display: inline-block;
+          font-size: 16px;
+          font-weight: 500;
+          color: #fff;
+          padding: 10px 20px;
+          border-radius: 2px;
+          border: 1px solid #3f51b57d;
+          background-color: #3f51b5;
+          border-radius: 50px;
+          text-decoration: none;
+          width: 200px;
+          text-align: center;
+          transition: .5s;
+          z-index: 9;
+      }
+      .default_btn:hover{
+        /*background-color: transparent;
+        color: #3f51b5;*/
+        letter-spacing: .5px;
+      }
+      .arrRicon{
+        position: absolute;
+        top: 5%;
+        right: 30px;
+        font-size: 26px;
+        color: #fff;
+        opacity: 0;
+        transition: .5s;
+      }
+      .default_btn:hover .arrRicon{
+        opacity: 1;
+        right: 20px;
+      }
+      .addtocart{
+        position: relative;
+        display: inline-block;
+        font-size: 16px;
+        font-weight: 500;
+        color: #333;
+        padding: 10px 30px;
+        border-radius: 2px;
+        border: 1px solid #333;
+        background-color: transparent;
+        border-radius: 50px;
+        text-decoration: none;
+        text-align: center;
+        transition: .5s;
+        margin: 10px 0;
+        transform: translate(0px, 25px);
+        opacity: 0;
+        visibility: hidden;
+      }
+      .addtocart:hover{
+        background-color: #333;
+        color: #fff;
+      }
+      .myitem_box:hover .addtocart{
+        opacity: 1;
+        visibility: visible;
+        transform: translate(0px, 0px);
+      }
+      
+        .list{
+          width: 100%;
+          max-width: 600px;
+          display: flex;
+          flex-wrap: wrap;
+          gap: 10px;
+          margin-top: 30px;
+          margin-bottom: 30px;
+          vertical-align: top;
+          padding: 0;
+        }        
+        .list li {
+          display: inline-flex;
+          align-items: center;
+          width: 48%;
+          font-size: 16px;
+          color: #fff;
+          padding: 10px 20px;
+          border-radius: 25px;
+          border: 1px solid #fff;
+        }
+        .list li i{
+          font-size: 18px;
+          margin-right: 15px;
+        }
+
+        .product_details{
+          position: relative;
+          background: #282828;
+        }
+        .myitem_box{
+          text-align: center;
+          position: relative;
+          background-color: #fff;
+          padding: 15px;
+          border-radius: 10px;
+          z-index: 9;
+        }
+        .myitem_box .media_box1 .item_img{
+          max-width: 70%;
+          transition: .5s;
+          position: relative;
+          z-index: 9;
+        }
+        .myitem_box:hover .media_box1 .item_img{
+         transform: scale(.9);
+        }
+        .myitem_box .details_box{
+          padding: 10px 10px;
+        }
+        .myitem_box .details_box h4{
+          font-size: 26px;
+          color: #444;
+          font-weight: 700;
+        }
+        .myitem_box .price_box span{
+          font-size: 20px;
+          color: #444;
+          font-weight: 700;
+          display: inline-block;
+        }
+        .myitem_box .price_box del{
+          font-size: 22px;
+          color: #fea100;
+          margin-left: 5px;
+          font-weight: 700;
+          display: inline-block;
+        }
+        .btn_box{
+          padding: 10px 0;
+          position: relative;
+          text-align: center;
+        }
+        .rating_box{
+          position: absolute;
+          display: block;
+          width: 100%;
+          text-align: center;
+          font-size: 20px;
+          color: #fea100;
+          margin: 10px auto;
+          transition: .5s;
+        }
+        .myitem_box:hover .rating_box{
+          opacity: 0;
+          visibility: visible;
+          transform: translate(0px, -20px);
+        }
+
+
+
+        .services-sec{
+          width: 100%;
+          position: relative;
+          background-color: lightblue;
+          padding: 100px 0;
+        }
+        .item-wrapper{
+          position: relative;
+          display: flex;
+          margin: 0 auto;
+          grid-gap: 20px;
+          max-width: 1100px;
+          width: 100%;
+          justify-content: center;
+          align-items: center;
+        }
+        .item-wrapper .ser-item{
+          position: relative;
+          width: 33%;
+          background-color: #fff;
+          border-radius: 10px;
+          padding: 10px;
+          box-shadow: 0 3px 10px #33333345;
+          transition: .5s;
+        }
+        .item-wrapper .ser-item:hover{
+          box-shadow: 0 5px 15px #33333378;
+          margin-top: -20px;
+        }
+        .circleAnim{
+          display: flex;
+          position: absolute;
+          top: 0%;
+          left: 0%;
+          width: 50px;
+          height: 50px;
+          border-radius: 50%;
+          border: 1px solid purple;
+          z-index: 9;
+          justify-content: center;
+          align-items: center;
+          opacity: 1;
+        }
+        .circleAnim i{
+          color: purple;
+          font-size: 32px;
+        }
+
+        .section{
+          position: relative;
+          padding: 100px 0;
+        }
+        .video_section{
+          position: relative;
+          padding: 200px 0;
+        }
+        .video_bg{
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }        
+        .product_vid{          
+          text-align: center;
+        }
+        .video_overlay{
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-color: rgb(19 33 109 / 80%);
+          z-index: 0;
+        }
+
+        .earbuds_1_img{
+          width: 300px;
+          opacity: .6;
+          transform: scale(.5);
+        }
+        .earbuds_2_img{
+          width: 150px;
+          position: absolute;
+          top: 25%;
+          left: 33%;
+          transform: scale(1);
+        }
+        .earbuds_3_img{
+          width: 150px;
+          position: absolute;
+          top: 50%;
+          left: 55%;
+          transform: scale(1);
+        }
+
+        .slide_container{
+          width: 100%;
+          display: block;
+          overflow-x: auto;
+          text-align: center;
+          align-items: center;
+          justify-content: center;
+        }
+        .slide_inner{
+          position: relative;
+          display: flex;
+          width: 400%;
+        }
+        .slide_item{
+          position: relative;
+          display: inline-flex;
+          width: 100%;
+        }
+        .slide_item .sl_img{
+          width: 100%;
+        }
+        .circle_anim2{
+          position: absolute;
+          top: 40%;
+          left: 5%;
+          margin: 0 auto;
+          z-index: 1;
+          width: 150px;
+          height: 150px;
+          overflow: hidden;
+          border-radius: 50%;
+        }
+        .circle_anim2 .art_line_img{
+          position: relative;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          transform: scale(1.6);
+        }
+
+
+        .boll_sec{
+          position: relative;
+          width: 100%;
+          height: 500px;
+        }
+        .boll{
+          display: block;
+          position: absolute;
+          width: 50px;
+          height: 50px;
+          border-radius: 50%;
+          background-color: #000;
+          top: 0;
+          left: 0;
+        }
+        .mybtn{
+          width: 80px;
+          text-align: center;
+          font-size: 16px;
+          padding: 10px;
+          color: #000;
+        }
+        .mybtn2{
+          width: 70px;
+          text-align: center;
+          font-size: 16px;
+          padding: 10px;
+          color: #000;
+        }
+        .formm {
+          background: #fff;
+          padding: 20px;
+          border-radius: 10px;
+          border: 1px solid #ddd;
+        }
+
+        .scroll_text{
+          padding: 20px 0;
+          background-color: #000;
+        }
+        .scroll_text .scrollTxt{
+          font-size: 42px;
+          font-weight: 700;
+          color: transparent;
+          margin-bottom: 0;
+          text-transform: uppercase;
+          text-transform: uppercase;
+          -webkit-text-stroke: 1px #fff;
+          text-stroke: 1px #fff;
+        }
+        .scroll_text .scrollTxt span:nth-child(odd){
+          color: #fff;
+        }
